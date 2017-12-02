@@ -1,0 +1,10 @@
+version: "3.3"
+
+services:
+  dota-buddy-tests:
+    build:
+      dockerfile: ./docker/Dockerfile
+      context: ./
+    volumes:
+      - ./:/usr/src/app
+    command: python -m unittest discover -s tests
