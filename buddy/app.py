@@ -1,5 +1,6 @@
 import os
-from flask import Flask, g, session, redirect, request, url_for, jsonify
+
+from flask import Flask, session, redirect, request, url_for, jsonify
 from requests_oauthlib import OAuth2Session
 
 OAUTH2_CLIENT_ID = os.environ['OAUTH2_CLIENT_ID']
