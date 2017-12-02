@@ -11,5 +11,6 @@ before_install:
 
 services:
   - docker
+  - git
 script:
   - docker-compose run --rm dota-buddy-tests
